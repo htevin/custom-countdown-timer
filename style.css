@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 html {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
-
+  font-family: 'Nunito', sans-serif;
 }
 
 /* Video Background */
@@ -82,7 +82,7 @@ input {
   border-radius: 20px;
   background: #fff;
   outline: none;
-
+  font-family: 'Nunito', sans-serif;
 }
 
 /* Button */
@@ -99,6 +99,11 @@ button {
   outline: none;
 }
 
+button:hover {
+  filter: brightness(110%);
+  transform: scale(105%);
+}
+
 
 
 /* Countdown */
@@ -107,7 +112,7 @@ ul {
 }
 
 li {
-
+  display: inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -124,6 +129,19 @@ li span {
 .complete {
   position: relative;
   top: 60px;
+}
+
+.complete-title{
+  animation: complete 4s infinite;
+}
+
+@keyframes complete {
+  0%{color: rgb(239, 13, 13);}
+  25%{color: rgb(243, 243, 0);}
+  50%{color: rgb(5, 194, 5);
+  transform: scale(1.5);}
+  75%{color: rgb(32, 32, 241);}
+  100%{color: rgb(181, 3, 181);}
 }
 
 
